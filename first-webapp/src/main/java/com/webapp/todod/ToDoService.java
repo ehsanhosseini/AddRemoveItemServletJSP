@@ -8,10 +8,10 @@ public class ToDoService {
 	
 	private static	List<ToDo> todos = new ArrayList<ToDo>();
 	static {
-		todos.add(new ToDo("Learn Web Application"));
-		todos.add(new ToDo("Learn Spring MVC"));
-		todos.add(new ToDo("Learn Spring Rest API"));
-		todos.add(new ToDo("Learn SpringBoot"));
+		todos.add(new ToDo("Learn Web Application", "Study"));
+		todos.add(new ToDo("Learn Spring MVC", "Study"));
+		todos.add(new ToDo("Learn Spring Rest API", "Study"));
+		todos.add(new ToDo("Learn SpringBoot", "Study"));
 	}
 	
 	public List<ToDo> retriveTodo(){

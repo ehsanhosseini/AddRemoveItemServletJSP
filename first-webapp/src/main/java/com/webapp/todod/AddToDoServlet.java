@@ -22,7 +22,7 @@ public class AddToDoServlet extends HttpServlet {
 		ServletException, IOException{ 	  
 		 
 		 //String newToDo = request.getParameter("todo"); 
-		 todoservice.addTodo(new ToDo (request.getParameter("todo")));
+		 todoservice.addTodo(new ToDo(request.getParameter("todo"), request.getParameter("category") ));
 		 response.sendRedirect("/list-todos.do");
 	    
    }

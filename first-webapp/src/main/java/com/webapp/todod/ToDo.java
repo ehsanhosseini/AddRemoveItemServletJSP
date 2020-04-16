@@ -3,11 +3,14 @@ package com.webapp.todod;
 public class ToDo {
 
 	private String name;
+	private String category;
 
-	public ToDo(String name) {
+	public ToDo(String name, String category) {
 		super();
 		this.name = name;
+		this.category = category;
 	}
+		
 
 	public String getName() {
 		return name;
@@ -16,11 +19,25 @@ public class ToDo {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
+
+	public String getCategory() {
+		return category;
+	}
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
 
 	@Override
 	public String toString() {
-		return String.format("ToDo [name=%s]", name);
+		return String.format("ToDo [name=%s, category=%s]", name, category);
 	}
+	
+	
 
 	@Override
 	public int hashCode() {
